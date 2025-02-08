@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <h1>Welcome to the Shopping</h1>
+
+    <!-- Two Options: Login or Register -->
+    <div id="auth-selection">
+        <button id="show-login">Login</button>
+        <button id="show-register">New Register</button>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="register-form" style="display: none;">
+        <h2>Register</h2>
+        <input type="email" id="reg-email" placeholder="Enter your email" required>
+        <input type="password" id="reg-password" placeholder="Enter your password" required>
+        <button id="register-btn">Register</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-form" style="display: none;">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Enter your email" required>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+        <button id="login-btn">Login</button>
+    </div>
+
+    <!-- Options After Login/Register -->
+    <div id="options" style="display: none;">
+        <h3>Select an Option:</h3>
+        <button onclick="window.location.href='home.html'">Go to Home</button>
+        <button onclick="window.location.href='vendor.html'">Go to Vendor Page</button>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
